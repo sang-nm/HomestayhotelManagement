@@ -1,0 +1,27 @@
+c:\users\felis\Documents\My Projects\HomeStayWCF\HomeStayWCF\bin\HomeStayWCF.dll.config
+c:\users\felis\Documents\My Projects\HomeStayWCF\HomeStayWCF\bin\HomeStayWCF.dll
+c:\users\felis\Documents\My Projects\HomeStayWCF\HomeStayWCF\bin\HomeStayWCF.pdb
+c:\users\felis\Documents\My Projects\HomeStayWCF\HomeStayWCF\obj\Debug\HomeStayWCF.csprojResolveAssemblyReference.cache
+c:\users\felis\Documents\My Projects\HomeStayWCF\HomeStayWCF\obj\Debug\HomeStayWCF.csproj.CoreCompileInputs.cache
+c:\users\felis\Documents\My Projects\HomeStayWCF\HomeStayWCF\obj\Debug\HomeStayWCF.dll
+c:\users\felis\Documents\My Projects\HomeStayWCF\HomeStayWCF\obj\Debug\HomeStayWCF.pdb
+C:\Users\An\Desktop\HomestayhotelManagement\HomestayhotelManagement\HomeStayWCF\bin\HomeStayWCF.dll.config
+C:\Users\An\Desktop\HomestayhotelManagement\HomestayhotelManagement\HomeStayWCF\bin\HomeStayWCF.dll
+C:\Users\An\Desktop\HomestayhotelManagement\HomestayhotelManagement\HomeStayWCF\bin\HomeStayWCF.pdb
+C:\Users\An\Desktop\HomestayhotelManagement\HomestayhotelManagement\HomeStayWCF\obj\Debug\HomeStayWCF.csprojResolveAssemblyReference.cache
+C:\Users\An\Desktop\HomestayhotelManagement\HomestayhotelManagement\HomeStayWCF\obj\Debug\HomeStayWCF.csproj.CoreCompileInputs.cache
+C:\Users\An\Desktop\HomestayhotelManagement\HomestayhotelManagement\HomeStayWCF\obj\Debug\HomeStayWCF.dll
+C:\Users\An\Desktop\HomestayhotelManagement\HomestayhotelManagement\HomeStayWCF\obj\Debug\HomeStayWCF.pdb
+C:\Users\Felis\Documents\My Projects\HomestayhotelManagement\HomestayhotelManagement\HomeStayWCF\bin\HomeStayWCF.dll.config
+C:\Users\Felis\Documents\My Projects\HomestayhotelManagement\HomestayhotelManagement\HomeStayWCF\bin\HomeStayWCF.dll
+C:\Users\Felis\Documents\My Projects\HomestayhotelManagement\HomestayhotelManagement\HomeStayWCF\bin\HomeStayWCF.pdb
+C:\Users\Felis\Documents\My Projects\HomestayhotelManagement\HomestayhotelManagement\HomeStayWCF\obj\Debug\HomeStayWCF.csprojResolveAssemblyReference.cache
+C:\Users\Felis\Documents\My Projects\HomestayhotelManagement\HomestayhotelManagement\HomeStayWCF\obj\Debug\HomeStayWCF.csproj.CoreCompileInputs.cache
+C:\Users\Felis\Documents\My Projects\HomestayhotelManagement\HomestayhotelManagement\HomeStayWCF\obj\Debug\HomeStayWCF.dll
+C:\Users\Felis\Documents\My Projects\HomestayhotelManagement\HomestayhotelManagement\HomeStayWCF\obj\Debug\HomeStayWCF.pdb
+C:\Users\Felis\Documents\My Projects\HomestayhotelManagement\HomeStayWCF\bin\HomeStayWCF.dll.config
+C:\Users\Felis\Documents\My Projects\HomestayhotelManagement\HomeStayWCF\bin\HomeStayWCF.dll
+C:\Users\Felis\Documents\My Projects\HomestayhotelManagement\HomeStayWCF\bin\HomeStayWCF.pdb
+C:\Users\Felis\Documents\My Projects\HomestayhotelManagement\HomeStayWCF\obj\Debug\HomeStayWCF.csproj.CoreCompileInputs.cache
+C:\Users\Felis\Documents\My Projects\HomestayhotelManagement\HomeStayWCF\obj\Debug\HomeStayWCF.dll
+C:\Users\Felis\Documents\My Projects\HomestayhotelManagement\HomeStayWCF\obj\Debug\HomeStayWCF.pdb

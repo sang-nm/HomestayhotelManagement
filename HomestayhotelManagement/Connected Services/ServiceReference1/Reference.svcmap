@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6ec70776-5863-4de0-8010-17eebec7af74" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:56162/HomeStay.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HomeStay.xsd" MetadataType="Schema" ID="2d33256b-94f1-4baa-a6a7-22f33c9cf407" SourceId="1" SourceUrl="http://localhost:56162/HomeStay.svc?xsd=xsd0" />
+    <MetadataFile FileName="HomeStay1.xsd" MetadataType="Schema" ID="b307f887-522e-4976-a47f-f3116a8d0b6a" SourceId="1" SourceUrl="http://localhost:56162/HomeStay.svc?xsd=xsd2" />
+    <MetadataFile FileName="HomeStay.wsdl" MetadataType="Wsdl" ID="60f5be0e-9da0-4de9-8a12-d4916cc849e9" SourceId="1" SourceUrl="http://localhost:56162/HomeStay.svc?wsdl" />
+    <MetadataFile FileName="HomeStay2.xsd" MetadataType="Schema" ID="a501eeca-4e90-4ff0-887b-0e14fd10fade" SourceId="1" SourceUrl="http://localhost:56162/HomeStay.svc?xsd=xsd3" />
+    <MetadataFile FileName="HomeStay.disco" MetadataType="Disco" ID="b124eb82-4727-406e-8439-a5c1d3541db6" SourceId="1" SourceUrl="http://localhost:56162/HomeStay.svc?disco" />
+    <MetadataFile FileName="HomeStay3.xsd" MetadataType="Schema" ID="7028287d-4574-4529-a7eb-c7fe9847b898" SourceId="1" SourceUrl="http://localhost:56162/HomeStay.svc?xsd=xsd1" />
+    <MetadataFile FileName="HomeStay4.xsd" MetadataType="Schema" ID="ab092370-06d4-4fc1-8df3-6843f5dac991" SourceId="1" SourceUrl="http://localhost:56162/HomeStay.svc?xsd=xsd4" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

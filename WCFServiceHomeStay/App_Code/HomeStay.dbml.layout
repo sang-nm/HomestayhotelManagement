@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.875, 8.5" name="HomeStay">
+  <DataContextMoniker Name="/HomeStayDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2c8406c9-fe9a-43bc-a2d1-57559c48d92d" isExpanded="false" absoluteBounds="5.25, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/HomeStayDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e371680d-21f0-4741-a1d8-3be8fa1f7c9e" absoluteBounds="5.2650000000000006, 0.96, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8584e56c-9abb-4a2a-89e0-7ca558859ddb" isExpanded="false" absoluteBounds="3, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/HomeStayDataContext/Role" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c69d1e6-8da8-473b-986d-d5c01ab3fbab" isExpanded="false" absoluteBounds="3.015, 0.96, 1.9700000000000002, 0.2493896484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="15b5ccbe-e8ad-4694-b186-7e374ff8ef2f" isExpanded="false" absoluteBounds="3, 1.25, 2, 0.45">
+      <DataClassMoniker Name="/HomeStayDataContext/Service" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e01e21e4-8745-4903-8736-c92e8673f157" absoluteBounds="3.0149999999999997, 1.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="db821972-bfc7-4414-a13f-725062c9dc5b" isExpanded="false" absoluteBounds="7.375, 1.25, 2, 0.45">
+      <DataClassMoniker Name="/HomeStayDataContext/Room" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9026b1d8-9b61-487a-96df-9a556815a4d5" isExpanded="false" absoluteBounds="7.3900000000000006, 1.71, 1.9700000000000002, 0.2493896484375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="34ad50e2-3e80-457d-aec9-f42656210198" isExpanded="false" absoluteBounds="5.25, 1.125, 2, 0.45">
+      <DataClassMoniker Name="/HomeStayDataContext/Room_Service" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a470ec7-9190-401a-a612-1fb34d87fb1a" absoluteBounds="5.265, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d2684f52-082f-49d6-97ea-939298a26b0b" isExpanded="false" absoluteBounds="7.375, 0.5, 2, 0.45">
+      <DataClassMoniker Name="/HomeStayDataContext/Image" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bef9e5b4-3500-486e-9c96-ccdc980d8eae" absoluteBounds="7.39, 0.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a6a90a8-d220-4474-8c59-812a4b957dcc" isExpanded="false" absoluteBounds="9.625, 2.625, 2, 0.45">
+      <DataClassMoniker Name="/HomeStayDataContext/Bill" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b375c027-9432-4486-96aa-9150fc12d846" absoluteBounds="9.64, 3.0850000000000009, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cb41f75e-45f4-4034-8673-a5751ef38511" isExpanded="false" absoluteBounds="7.375, 2, 2, 0.45">
+      <DataClassMoniker Name="/HomeStayDataContext/Room_Reserve" />
+      <nestedChildShapes>
+        <elementListCompartment Id="623442fe-ed55-4967-b2f9-866e58895057" absoluteBounds="7.3900000000000006, 2.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e1720bfb-e2e5-4efd-bb85-4b38d7341b6d" isExpanded="false" absoluteBounds="9.625, 2, 2, 0.45">
+      <DataClassMoniker Name="/HomeStayDataContext/Reservation" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f0143a8-98d3-4978-8ac3-95635e757fd8" absoluteBounds="9.64, 2.4600000000000009, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c74ce04c-618f-40a5-9b6c-16907790d0bf" isExpanded="false" absoluteBounds="3, 2, 2, 0.45">
+      <DataClassMoniker Name="/HomeStayDataContext/Type" />
+      <nestedChildShapes>
+        <elementListCompartment Id="96b293fd-dc78-407a-a4a6-41a4c12958e3" absoluteBounds="3.0150000000000006, 2.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomestayhotelManagement", "HomestayhotelManagement\HomestayhotelManagement.csproj", "{FA72208C-FE38-4CC2-81C1-E0D2B3563DF4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2BBA491E-7960-4ACF-BDF8-3CB84B443D49} = {2BBA491E-7960-4ACF-BDF8-3CB84B443D49}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{64B86DAC-AA0E-49F1-A39E-DD1033005BD9}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.txt = Readme.txt
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WCFServiceHomeStay", "WCFServiceHomeStay\", "{2BBA491E-7960-4ACF-BDF8-3CB84B443D49}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_56162"
+		Debug.AspNetCompiler.PhysicalPath = "WCFServiceHomeStay\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56162\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_56162"
+		Release.AspNetCompiler.PhysicalPath = "WCFServiceHomeStay\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56162\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56162"
+		SlnRelativePath = "WCFServiceHomeStay\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeStayWeb", "..\..\..\Desktop\HomeStayWeb\HomeStayWeb\HomeStayWeb.csproj", "{9133FF74-D03D-4A8C-AB47-E78B60B4C81B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2BBA491E-7960-4ACF-BDF8-3CB84B443D49} = {2BBA491E-7960-4ACF-BDF8-3CB84B443D49}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA72208C-FE38-4CC2-81C1-E0D2B3563DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA72208C-FE38-4CC2-81C1-E0D2B3563DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA72208C-FE38-4CC2-81C1-E0D2B3563DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA72208C-FE38-4CC2-81C1-E0D2B3563DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BBA491E-7960-4ACF-BDF8-3CB84B443D49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BBA491E-7960-4ACF-BDF8-3CB84B443D49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BBA491E-7960-4ACF-BDF8-3CB84B443D49}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BBA491E-7960-4ACF-BDF8-3CB84B443D49}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{9133FF74-D03D-4A8C-AB47-E78B60B4C81B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9133FF74-D03D-4A8C-AB47-E78B60B4C81B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9133FF74-D03D-4A8C-AB47-E78B60B4C81B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9133FF74-D03D-4A8C-AB47-E78B60B4C81B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6225773E-ABC6-4E52-9F3A-6E33EEDE5320}
+	EndGlobalSection
+EndGlobal

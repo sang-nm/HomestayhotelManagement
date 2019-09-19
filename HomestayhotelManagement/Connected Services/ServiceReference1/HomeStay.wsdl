@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="HomeStay" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:56162/HomeStay.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:56162/HomeStay.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:56162/HomeStay.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://localhost:56162/HomeStay.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data.Linq" />
+      <xsd:import schemaLocation="http://localhost:56162/HomeStay.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/System.Drawing" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IHomeStay_getSingleUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSingleUser" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_getSingleUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSingleUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_getAllUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllUser" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_getAllUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_FindUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindUsers" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_FindUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_checkLogin_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkLogin" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_checkLogin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_InsertUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUser" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_InsertUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_UpdateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUser" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_UpdateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_DeleteUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUser" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_DeleteUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_SaveImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveImage" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_SaveImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_getSingleRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSingleRole" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_getSingleRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSingleRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_getAllRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllRole" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_getAllRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_FindRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindRoles" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_FindRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_InsertRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRole" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_InsertRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_UpdateRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRole" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_UpdateRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_DeleteRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRole" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_DeleteRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_getSingleService_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSingleService" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_getSingleService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSingleServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_getAllService_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllService" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_getAllService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_FindService_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindService" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_FindService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_InsertService_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertService" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_InsertService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_UpdateService_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateService" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_UpdateService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_DeleteService_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteService" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_DeleteService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_getSingleRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSingleRoom" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_getSingleRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSingleRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_getAllRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllRoom" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_getAllRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_FindRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:FindRoom" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_FindRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FindRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_InsertRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRoom" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_InsertRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_UpdateRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRoom" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_UpdateRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_DeleteRoom_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRoom" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_DeleteRoom_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRoomResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_DeleteAllRoom_ServicebyRoomID_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAllRoom_ServicebyRoomID" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_DeleteAllRoom_ServicebyRoomID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAllRoom_ServicebyRoomIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_GetAllServiceByRoomID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllServiceByRoomID" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_GetAllServiceByRoomID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllServiceByRoomIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_GetAllImagebyRoomID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllImagebyRoomID" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_GetAllImagebyRoomID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllImagebyRoomIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_GetFirstImagebyRoomID_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetFirstImagebyRoomID" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_GetFirstImagebyRoomID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetFirstImagebyRoomIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_InsertImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertImage" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_InsertImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_InsertListImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertListImage" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_InsertListImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertListImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_DeleteAllImagebyRoomID_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAllImagebyRoomID" />
+  </wsdl:message>
+  <wsdl:message name="IHomeStay_DeleteAllImagebyRoomID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAllImagebyRoomIDResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IHomeStay">
+    <wsdl:operation name="getSingleUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/getSingleUser" message="tns:IHomeStay_getSingleUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/getSingleUserResponse" message="tns:IHomeStay_getSingleUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/getAllUser" message="tns:IHomeStay_getAllUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/getAllUserResponse" message="tns:IHomeStay_getAllUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/FindUsers" message="tns:IHomeStay_FindUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/FindUsersResponse" message="tns:IHomeStay_FindUsers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkLogin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/checkLogin" message="tns:IHomeStay_checkLogin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/checkLoginResponse" message="tns:IHomeStay_checkLogin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/InsertUser" message="tns:IHomeStay_InsertUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/InsertUserResponse" message="tns:IHomeStay_InsertUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/UpdateUser" message="tns:IHomeStay_UpdateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/UpdateUserResponse" message="tns:IHomeStay_UpdateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/DeleteUser" message="tns:IHomeStay_DeleteUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/DeleteUserResponse" message="tns:IHomeStay_DeleteUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/SaveImage" message="tns:IHomeStay_SaveImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/SaveImageResponse" message="tns:IHomeStay_SaveImage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSingleRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/getSingleRole" message="tns:IHomeStay_getSingleRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/getSingleRoleResponse" message="tns:IHomeStay_getSingleRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/getAllRole" message="tns:IHomeStay_getAllRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/getAllRoleResponse" message="tns:IHomeStay_getAllRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindRoles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/FindRoles" message="tns:IHomeStay_FindRoles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/FindRolesResponse" message="tns:IHomeStay_FindRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/InsertRole" message="tns:IHomeStay_InsertRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/InsertRoleResponse" message="tns:IHomeStay_InsertRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/UpdateRole" message="tns:IHomeStay_UpdateRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/UpdateRoleResponse" message="tns:IHomeStay_UpdateRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/DeleteRole" message="tns:IHomeStay_DeleteRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/DeleteRoleResponse" message="tns:IHomeStay_DeleteRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSingleService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/getSingleService" message="tns:IHomeStay_getSingleService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/getSingleServiceResponse" message="tns:IHomeStay_getSingleService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/getAllService" message="tns:IHomeStay_getAllService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/getAllServiceResponse" message="tns:IHomeStay_getAllService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/FindService" message="tns:IHomeStay_FindService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/FindServiceResponse" message="tns:IHomeStay_FindService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/InsertService" message="tns:IHomeStay_InsertService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/InsertServiceResponse" message="tns:IHomeStay_InsertService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/UpdateService" message="tns:IHomeStay_UpdateService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/UpdateServiceResponse" message="tns:IHomeStay_UpdateService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/DeleteService" message="tns:IHomeStay_DeleteService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/DeleteServiceResponse" message="tns:IHomeStay_DeleteService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSingleRoom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/getSingleRoom" message="tns:IHomeStay_getSingleRoom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/getSingleRoomResponse" message="tns:IHomeStay_getSingleRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllRoom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/getAllRoom" message="tns:IHomeStay_getAllRoom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/getAllRoomResponse" message="tns:IHomeStay_getAllRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FindRoom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/FindRoom" message="tns:IHomeStay_FindRoom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/FindRoomResponse" message="tns:IHomeStay_FindRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertRoom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/InsertRoom" message="tns:IHomeStay_InsertRoom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/InsertRoomResponse" message="tns:IHomeStay_InsertRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRoom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/UpdateRoom" message="tns:IHomeStay_UpdateRoom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/UpdateRoomResponse" message="tns:IHomeStay_UpdateRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRoom">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/DeleteRoom" message="tns:IHomeStay_DeleteRoom_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/DeleteRoomResponse" message="tns:IHomeStay_DeleteRoom_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllRoom_ServicebyRoomID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/DeleteAllRoom_ServicebyRoomID" message="tns:IHomeStay_DeleteAllRoom_ServicebyRoomID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/DeleteAllRoom_ServicebyRoomIDResponse" message="tns:IHomeStay_DeleteAllRoom_ServicebyRoomID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllServiceByRoomID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/GetAllServiceByRoomID" message="tns:IHomeStay_GetAllServiceByRoomID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/GetAllServiceByRoomIDResponse" message="tns:IHomeStay_GetAllServiceByRoomID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllImagebyRoomID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/GetAllImagebyRoomID" message="tns:IHomeStay_GetAllImagebyRoomID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/GetAllImagebyRoomIDResponse" message="tns:IHomeStay_GetAllImagebyRoomID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFirstImagebyRoomID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/GetFirstImagebyRoomID" message="tns:IHomeStay_GetFirstImagebyRoomID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/GetFirstImagebyRoomIDResponse" message="tns:IHomeStay_GetFirstImagebyRoomID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/InsertImage" message="tns:IHomeStay_InsertImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/InsertImageResponse" message="tns:IHomeStay_InsertImage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertListImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/InsertListImage" message="tns:IHomeStay_InsertListImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/InsertListImageResponse" message="tns:IHomeStay_InsertListImage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllImagebyRoomID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHomeStay/DeleteAllImagebyRoomID" message="tns:IHomeStay_DeleteAllImagebyRoomID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHomeStay/DeleteAllImagebyRoomIDResponse" message="tns:IHomeStay_DeleteAllImagebyRoomID_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IHomeStay" type="tns:IHomeStay">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getSingleUser">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/getSingleUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllUser">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/getAllUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindUsers">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/FindUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkLogin">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/checkLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertUser">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/InsertUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateUser">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/UpdateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteUser">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/DeleteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveImage">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/SaveImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSingleRole">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/getSingleRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllRole">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/getAllRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindRoles">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/FindRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRole">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/InsertRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRole">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/UpdateRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRole">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/DeleteRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSingleService">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/getSingleService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllService">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/getAllService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindService">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/FindService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertService">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/InsertService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateService">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/UpdateService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteService">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/DeleteService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSingleRoom">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/getSingleRoom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllRoom">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/getAllRoom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindRoom">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/FindRoom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertRoom">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/InsertRoom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRoom">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/UpdateRoom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRoom">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/DeleteRoom" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllRoom_ServicebyRoomID">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/DeleteAllRoom_ServicebyRoomID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllServiceByRoomID">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/GetAllServiceByRoomID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllImagebyRoomID">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/GetAllImagebyRoomID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFirstImagebyRoomID">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/GetFirstImagebyRoomID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertImage">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/InsertImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertListImage">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/InsertListImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAllImagebyRoomID">
+      <soap:operation soapAction="http://tempuri.org/IHomeStay/DeleteAllImagebyRoomID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HomeStay">
+    <wsdl:port name="BasicHttpBinding_IHomeStay" binding="tns:BasicHttpBinding_IHomeStay">
+      <soap:address location="http://localhost:56162/HomeStay.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
